@@ -117,10 +117,7 @@ def update_target_excel(result_list):
         result_row_list.append(each_row[column_idx_dict['open_year']].value)
         result_row_list.append('P' + int(each_row[column_idx_dict['open_period']].value))
         result_row_list.append('W' + int(each_row[column_idx_dict['open_week']].value))
-
-
-
-
+        
     target_workbook.save(constant_dict['path_to_destination'] + constant_dict['output_file_name'])
 
 update_target_excel(None)
